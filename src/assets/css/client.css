@@ -1,0 +1,26 @@
+body {
+    background-color:#a4cffb;
+    padding : 0;
+    margin : 0;
+}
+.clientCotainerBox {
+    align-items: center;
+    justify-content: center;
+}
+.clientCotainer {
+    background-color: #FFF;
+    padding : 20px;
+    margin-top: 5%;
+    border-radius: 15px;
+    width: 80%;
+}
+.addBtn {
+    float : right;
+    margin-bottom: 30px;
+}
+.clientImage{
+    border-radius: 10px;
+}
+.editContainer{
+    margin-bottom: 5px;
+}

@@ -31,7 +31,7 @@ import '../../assets/css/auth.css';
 
 export default function Register(props) {
 
-    const TEST_SITE_KEY = "6LcdxMAhAAAAAEELQOZ9_7qmD1x18yY3xaAEmBD8";
+    const CAPTCHA_SITE_KEY = "6LcdxMAhAAAAAEELQOZ9_7qmD1x18yY3xaAEmBD8";
 
     const recaptchaRef = useRef(null);
 
@@ -64,7 +64,7 @@ export default function Register(props) {
     const onSubmit = () => {
         if (formState.recaptcha === true) {
             if (isObjEmpty(errors)) {
-              axios.post('http://127.0.0.1:8000/api/register', 
+              axios.post(process.env.REACT_APP_BASE_URL+'register', 
               {
                 name: formState.name,
                 password: formState.password,
@@ -225,7 +225,7 @@ export default function Register(props) {
 
                         <ReCAPTCHA
                             ref={recaptchaRef}
-                            sitekey={TEST_SITE_KEY}
+                            sitekey={CAPTCHA_SITE_KEY}
                             onChange={(value) => {
                                 setFormState({
                                   ...formState,

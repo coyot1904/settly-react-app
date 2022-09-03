@@ -1,4 +1,4 @@
-import { SET_USER  , SET_CLIENT} from '../contants/action-types';
+import { SET_USER  , SET_CLIENT , GET_CLIENT} from '../contants/action-types';
   
   const initialState = [
 
@@ -9,6 +9,8 @@ import { SET_USER  , SET_CLIENT} from '../contants/action-types';
       case SET_USER:
         return { ...state, user: action.payload };
       case SET_CLIENT:
+        return { ...state, client: action.payload };
+      case GET_CLIENT:
         return { ...state, client: action.payload };
       default:
         return state

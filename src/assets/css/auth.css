@@ -49,6 +49,21 @@ body {
     background-color: #5887c5;
     border-color: #5887c5;
 }
+.authSubmitCancel{
+    width: 85%;
+    margin-left: 30px;
+    margin-top: 10px;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    text-align: center;
+    color : #FFF;
+    padding : 7px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.authSubmitCancel:hover {
+    color : #FFF;
+}
 .captcha{
     margin: 0 auto;
     display: table;
@@ -58,4 +73,9 @@ body {
     margin-top: 10px;
     font-size: 14px;
     margin-left: 30px;
+}
+.clientImage{
+    margin: 0 auto;
+    display: table;
+    margin-bottom: 10px;
 }

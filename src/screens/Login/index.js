@@ -60,7 +60,6 @@ export default function Login(props) {
     const navigate = useNavigate();
 
     const [formState, setFormState] = useState({
-
         email: '',
         password : '',
     });
@@ -77,7 +76,7 @@ export default function Login(props) {
 
     const onSubmit = () => {
         if (isObjEmpty(errors)) {
-          axios.post('http://127.0.0.1:8000/api/login', 
+          axios.post(process.env.REACT_APP_BASE_URL+'login', 
           {
             password: formState.password,
             email : formState.email,
@@ -85,7 +84,6 @@ export default function Login(props) {
           })
           .then(function (response) {
             cookie.set("jwt", response.data.token);
-            dispatch(setUser(response.data));
             navigate("/clients");
           })
           .catch(function (error) {
