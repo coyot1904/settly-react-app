@@ -13,25 +13,12 @@ import axios from "axios";
 // Non-UI Constants, Data
 import { isObjEmpty } from "../../assets/utility/until";
 
-// Components
-
-
 // Styles, styling constants
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/css/auth.css';
 
-/**
- * @typedef {object} RegisterProps
- */
-
-/**
- * @param {RegisterProps} props
- */
-
-export default function Register(props) {
-
-    const CAPTCHA_SITE_KEY = "6LcdxMAhAAAAAEELQOZ9_7qmD1x18yY3xaAEmBD8";
+export default function Register() {
 
     const recaptchaRef = useRef(null);
 
@@ -225,7 +212,7 @@ export default function Register(props) {
 
                         <ReCAPTCHA
                             ref={recaptchaRef}
-                            sitekey={CAPTCHA_SITE_KEY}
+                            sitekey={process.env.REACT_APP_CAPTCHA}
                             onChange={(value) => {
                                 setFormState({
                                   ...formState,

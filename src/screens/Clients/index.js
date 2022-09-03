@@ -1,6 +1,6 @@
 // Libs
-import React, { useState , useEffect } from "react"
-import { Row , Container , Col , Form , Button , Table , Pagination } from 'react-bootstrap';
+import React, { useEffect } from "react"
+import { Row , Container , Col , Button , Table , Pagination } from 'react-bootstrap';
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -10,23 +10,12 @@ import { useDispatch } from 'react-redux';
 // Non-UI Constants, Data
 import { getClient , setUser } from '../../redux/actions/userActions';
 
-// Components
-
-
 // Styles, styling constants
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/css/client.css';
 
-/**
- * @typedef {object} ClientsProps
- */
-
-/**
- * @param {ClientsProps} props
- */
-
-export default function Clients(props) {
+export default function Clients() {
 
     const dispatch = useDispatch();
 

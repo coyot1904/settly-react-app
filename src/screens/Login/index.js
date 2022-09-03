@@ -9,31 +9,16 @@ import * as yup from 'yup';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios";
 import cookie from "js-cookie";
-import { useDispatch } from 'react-redux';
 
 // Non-UI Constants, Data
 import { isObjEmpty } from "../../assets/utility/until";
-import { setUser } from '../../redux/actions/userActions';
-
-// Components
-
 
 // Styles, styling constants
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/css/auth.css';
 
-/**
- * @typedef {object} LoginProps
- */
-
-/**
- * @param {LoginProps} props
- */
-
-export default function Login(props) {
-
-    const dispatch = useDispatch();
+export default function Login() {
 
     useEffect(() => {
       let url = window.location.toString();

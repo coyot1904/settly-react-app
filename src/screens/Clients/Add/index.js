@@ -15,23 +15,12 @@ import { ToastContainer, toast } from 'react-toastify';
 import { isObjEmpty } from "../../../assets/utility/until";
 
 
-// Components
-
-
 // Styles, styling constants
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../assets/css/auth.css';
 
-/**
- * @typedef {object} ClientsProps
- */
-
-/**
- * @param {ClientsProps} props
- */
-
-export default function AddClinet(props) {
+export default function AddClinet() {
 
     const navigate = useNavigate();
 
