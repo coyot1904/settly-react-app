@@ -7,11 +7,11 @@ import {
 import { Provider } from 'react-redux';
 
 // pages
-import Login from "./screens/Login";
-import Register from "./screens/Register";
-import Clients from "./screens/Clients";
-import AddClinet from "./screens/Clients/Add/";
-import EditClient from "./screens/Clients/Edit";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Clients from "./pages/Clients";
+import AddClinet from "./pages/Clients/Add/";
+import EditClient from "./pages/Clients/Edit";
 
 // redux config
 import { createStore , applyMiddleware } from 'redux';
